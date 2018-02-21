@@ -124,9 +124,9 @@ public class MainActivityTest {
                 .check(matches(isDisplayed()));
 
     // Tap on a suggestion
-        onView(withText("Sarah Friedrich"))
-                .inRoot(withDecorView(not(is(mActivity.getWindow().getDecorView()))))
-                .perform(click());
+//        onView(withText("Sarah Friedrich"))
+//                .inRoot(withDecorView(not(is(mActivity.getWindow().getDecorView()))))
+//                .perform(click());
     // Check driver's card is opened
         onView(allOf(withId(R.id.textViewDriverName), withText("Sarah Friedrich"),
                 isDisplayed()));
